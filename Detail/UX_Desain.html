@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Showcase Project Protofolio" />
+    <meta name="keywords" content="Protofolio, project, IT" />
+    <meta name="author" content="Mahesa Adi Kusuma" />
+    <title>UX Design</title>
+
+    <link href="/dist/build/build.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.css"
+      rel="stylesheet" />
+  </head>
+
+  <body>
+    <section class="max-w-6xl mx-auto">
+      <div class="container mx-auto">
+        <!-- Mobile -->
+        <header class="p-5 block lg:hidden shadow-md">
+          <div class="flex items-center justify-between">
+            <div class="">
+              <img
+                src="/assets/images/esa_1.webp"
+                alt="avatar_profile"
+                class="w-12 h-12 rounded-full border-2 border-slate-300" />
+            </div>
+
+            <div class="flex items-center gap-4">
+              <div
+                class="hover:bg-slate-300 p-2 rounded-full cursor-pointer"
+                id="toggleMobile">
+                <div class="hidden" id="dark-mobile">
+                  <i
+                    data-feather="moon"
+                    width="20"
+                    height="20"
+                    class="font-medium"></i>
+                </div>
+
+                <div class="" id="light-mobile">
+                  <i
+                    data-feather="sun"
+                    width="20"
+                    height="20"
+                    class="font-medium"></i>
+                </div>
+              </div>
+              <div class="cursor-pointer" id="hamburger">
+                <div class="" id="align-right">
+                  <i
+                    data-feather="align-right"
+                    width="30"
+                    height="30"
+                    class="font-medium cursor-pointer"></i>
+                </div>
+
+                <div class="hidden" id="close">
+                  <i
+                    data-feather="x"
+                    width="30"
+                    height="30"
+                    class="font-medium cursor-pointer"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            x-transition.duration.200ms
+            class="relative hidden"
+            id="nav-menu">
+            <div
+              class="absolute z-50 top-5 min-w-full bg-white rounded-lg shadow-lg border border-slate-500">
+              <nav class="p-5">
+                <ul class="flex flex-col justify-center">
+                  <li
+                    class="p-3 pl-5 my-1 text-neutral-700 hover:bg-slate-100 hover:scale-105 duration-300 ease-in-out cursor-pointer rounded-lg">
+                    <a href="/index.html" class="flex items-center gap-5">
+                      <i
+                        data-feather="home"
+                        width="20"
+                        height="20"
+                        class="font-medium"></i>
+                      <span class="font-medium">Home</span>
+                    </a>
+                  </li>
+
+                  <li
+                    class="p-3 pl-5 my-1 text-neutral-700 hover:bg-slate-100 hover:scale-105 duration-300 ease-in-out zcursor-pointer rounded-lg">
+                    <a href="/project.html" class="flex items-center gap-5">
+                      <i
+                        data-feather="folder"
+                        width="20"
+                        height="20"
+                        class="font-medium"></i>
+                      <span class="font-medium">Projects</span>
+                    </a>
+                  </li>
+
+                  <li
+                    class="p-3 pl-5 my-1 text-neutral-700 hover:bg-slate-100 hover:scale-105 duration-300 ease-in-out cursor-pointer rounded-lg">
+                    <a href="#" class="flex items-center gap-5">
+                      <i
+                        data-feather="clipboard"
+                        width="20"
+                        height="20"
+                        class="font-medium"></i>
+                      <span class="font-medium">Course</span>
+                    </a>
+                  </li>
+
+                  <li
+                    class="p-3 pl-5 my-1 text-neutral-700 hover:bg-slate-100 hover:scale-105 duration-300 ease-in-out cursor-pointer rounded-lg">
+                    <a href="#" class="flex items-center gap-5">
+                      <i
+                        data-feather="info"
+                        width="20"
+                        height="20"
+                        class="font-medium"></i>
+                      <span class="font-medium">About</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </header>
+        <!-- Mobile -->
+
+        <div class="grid grid-cols-12 gap-7 my-4">
+          <!-- SIDEBAR -->
+          <div class="hidden lg:block col-span-3">
+            <header class="sticky top-0">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span
+                    class="w-3 h-3 bg-blue-500 rounded-full animate-pulse"></span>
+                  <span class="font-bold text-lg">Hire Me</span>
+                </div>
+                <div class="flex items-center justify-center cursor-pointer">
+                  <div
+                    class="hover:bg-slate-300 p-2 rounded-full"
+                    id="button-theme">
+                    <div class="hidden" id="darkD">
+                      <i
+                        data-feather="moon"
+                        width="20"
+                        height="20"
+                        class="font-medium"></i>
+                    </div>
+
+                    <div class="" id="lightD">
+                      <i
+                        data-feather="sun"
+                        width="20"
+                        height="20"
+                        class="font-medium"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex items-center flex-col my-5">
+                <div class="image">
+                  <img
+                    src="/assets/images/esa_1.webp"
+                    alt="avatar_profile"
+                    class="w-28 h-28 rounded-full border-4 border-slate-100"
+                    width="112"
+                    height="112" />
+                </div>
+
+                <div class="my-3">
+                  <h1 class="font-bold text-lg">Mahesa Adi Kusuma</h1>
+                </div>
+              </div>
+
+              <div class="border-t-2 border-neutral-500">
+                <div class="my-4">
+                  <ul class="text-base">
+                    <li
+                      class="p-3 pl-5 my-1 text-neutral-700 hover:bg-slate-100 hover:scale-105 duration-300 ease-in-out cursor-pointer rounded-lg">
+                      <a href="/index.html" class="flex items-center gap-5">
+                        <i
+                          data-feather="home"
+                          width="20"
+                          height="20"
+                          class="font-medium"></i>
+                        <span class="font-medium">Home</span>
+                      </a>
+                    </li>
+
+                    <li
+                      class="p-3 pl-5 my-1 bg-slate-100 text-neutral-700 hover:bg-slate-100 hover:scale-105 transition duration-300 ease-in-out cursor-pointer rounded-lg">
+                      <a
+                        href="/project.html"
+                        class="flex items-center gap-5">
+                        <i
+                          data-feather="folder"
+                          width="20"
+                          height="20"
+                          class="font-medium"></i>
+                        <span class="font-medium">Project</span>
+                      </a>
+                    </li>
+
+                    <li
+                      class="p-3 pl-5 my-4 text-neutral-700 hover:bg-slate-100 hover:scale-105 duration-300 ease-in-out cursor-pointer rounded-lg">
+                      <a href="#" class="flex items-center gap-5">
+                        <i
+                          data-feather="clipboard"
+                          width="20"
+                          height="20"
+                          class="font-medium"></i>
+                        <span class="font-medium">Course</span>
+                      </a>
+                    </li>
+
+                    <li
+                      class="p-3 pl-5 my-4 text-neutral-700 hover:bg-slate-100 hover:scale-105 duration-300 ease-in-out cursor-pointer rounded-lg">
+                      <a href="/about.html" class="flex items-center gap-5">
+                        <i
+                          data-feather="info"
+                          width="20"
+                          height="20"
+                          class="font-medium"></i>
+                        <span class="font-medium">About</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="mt-36">
+                <div
+                  class="w-full border-t-2 border-neutral-500 text-center py-4">
+                  <span
+                    >© 2023 With <span class="animate-pulse">❤️</span> By
+                    Mahesa</span
+                  >
+                </div>
+              </div>
+            </header>
+          </div>
+          <!-- SIDEBAR -->
+
+          <!-- MAIN -->
+          <div class="col-span-12 lg:col-span-9 px-5">
+            <main>
+              <div class="">
+                <a
+                  href="/project.html"
+                  class="flex items-center gap-3 mb-7 cursor-pointer">
+                  <i
+                    data-feather="arrow-left-circle"
+                    width="20"
+                    height="20"
+                    class="font-medium text-neutral-800">
+                  </i>
+                  <span class="">Back</span>
+                </a>
+                <div class="">
+                  <div class="flex item-center justify-between">
+                    <h1 class="font-bold text-2xl text-neutral-800">
+                      Belajar Dasar UX Design
+                    </h1>
+                  </div>
+
+                  <p
+                    class="font-normal text-neutral-500 tracking-tight leading-tight my-3 text-justify">
+                    mempelajari dasar-dasar UX beserta detail prosesnya dengan mengacu pada framework Design Thinking.
+                  </p>
+                </div>
+
+                <div class="my-5">
+                  <div class="flex items-center justify-between">
+                    <div class="">
+                      <h1 class="font-medium">Tech Stack</h1>
+                    </div>
+
+                    <div class="flex items-center gap-2">
+                      <i
+                        data-feather="github"
+                        width="20"
+                        height="20"
+                        class="font-medium text-neutral-800">
+                      </i>
+                      <a href="https://www.figma.com/file/O5MtNfZJK5JcvpkQyl5w9M/UX-Submission?type=design&node-id=8%3A63&mode=design&t=pmKWlxIit0wCVnup-1" target="_blank" class="font-medium"> Source Code </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="my-10">
+                  <div class="flex flex-col">
+
+                    <div id="main-slider" class="splide">
+                      <div class="splide__track">
+                        <ul class="splide__list  ">
+                          <li class="splide__slide cursor-pointer">
+                            <img src="/assets/Project/Dicoding/Home.webp" width="800" height="700" alt="thumbnail" />
+                          </li>
+                          <li class="splide__slide cursor-pointer  ">
+                            <img src="/assets/Project/Dicoding/Detail.webp" width="800" height="700" alt="thumbnail" />
+                          </li>
+
+                          <li class="splide__slide cursor-pointer">
+                            <img src="/assets/Project/Dicoding/Success.webp" width="800" height="700" alt="thumbnail" />
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <ul
+                      id="thumbnails"
+                      class="thumbnails flex my-5 gap-3 justify-center items-center">
+                      <li class="thumbnail opacity-30 rounded-md ">
+                        <img
+                          src="/assets/Project/Dicoding/Home.webp" width="150" height="150" alt="thumbnail"
+                           />
+                      </li>
+                      <li class="thumbnail opacity-30 rounded-md">
+                        <img
+                          src="/assets/Project/Dicoding/Detail-1.webp" width="150" height="150" alt="thumbnail"
+                          />
+                      </li>
+
+                      <li class="thumbnail opacity-30 rounded-md">
+                        <img
+                          src="/assets/Project/Dicoding/Success-1.webp" width="150" height="150" alt="thumbnail"
+                          />
+                      </li>
+                    </ul>
+
+                    <div class="">
+                      <h2 class="font-bold text-2xl">Belajar Dasar UX Design</h2>
+
+                      <h3 class="my-3 font-medium">Course <a href="https://www.dicoding.com/academies/335">Dicoding</a></h3>
+
+                      <div class=" my-5 text-md font-normal text-justify leading-7">
+                        <p>mempelajari dasar-dasar UX beserta detail prosesnya dengan mengacu pada framework Design Thinking.
+                          
+                          </p>
+    
+                          <p class="my-5">
+                            Mempelajari Konsep-Konsep dasar ux dasain, Empathize, Define, & Ideate, Storyboard dan Wireframe, High-Fidelity Prototype dan membuat UX Research dan Dokumentasi dalam bentuk portofolio 
+                          </p>
+
+                          <p>
+                            Hal-Hal Yang di Pelajari
+                            <ul class="list-disc block ms-10 mt-3">
+                              <li>Konsep Dasar UX Design</li>
+                              <li>Empathize</li>
+                              <li>Define</li>
+                              <li>Ideate</li>
+                              <li>High-Fidelity Prototype</li>
+                              <li>Dokumentasi UX Desain dalam bentuk portofolio</li>
+                              <li>Storyboard</li>
+                              <li>UX Research</li>
+                            </ul>
+                          </p>
+
+
+                          <p class="mt-10">Staet kit <a href="https://www.figma.com/file/O5MtNfZJK5JcvpkQyl5w9M/UX-Submission?type=design&node-id=8%3A63&mode=design&t=pmKWlxIit0wCVnup-1" class="text-blue-500 underline">Figma</a></p>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  
+                    
+                  </div>
+                
+              </div>
+            </main>
+          </div>
+          <!-- MAIN -->
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <script>
+      var splide = new Splide("#main-slider", {
+        pagination: false,
+      });
+
+      var thumbnails = document.getElementsByClassName("thumbnail");
+      var current;
+
+      for (var i = 0; i < thumbnails.length; i++) {
+        initThumbnail(thumbnails[i], i);
+      }
+
+      function initThumbnail(thumbnail, index) {
+        thumbnail.addEventListener("click", function () {
+          splide.go(index);
+        });
+      }
+
+      splide.on("mounted move", function () {
+        var thumbnail = thumbnails[splide.index];
+
+        if (thumbnail) {
+          if (current) {
+            current.classList.remove("is-active");
+          }
+
+          thumbnail.classList.add("is-active");
+          current = thumbnail;
+        }
+      });
+
+      splide.mount();
+    </script>
+
+    <script>
+      feather.replace();
+      updateIcon();
+    </script>
+  </body>
+</html>
